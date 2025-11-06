@@ -72,31 +72,31 @@
                 <br>
                 <h2>Hi Hi Hi !</h2>
             
-                
+              <fieldset>  
             </table>
-            <table style="border:1px dashed;" width="30%">
+            <table width="30%">
                 <form>
                     
-                        <caption>sign up for my news letter</caption>
+                        <legend>sign up for my news letter</legend>
                     
                     <tr>
-                        <td>name: <input type="text" placeholder="goms" ></td>
+                        <td>name: <input type="text" required placeholder="enter your name" ></td>
                     </tr>
                     <tr>
-                        <td>email: <input type="email" placeholder="enter your email" ></td>
+                        <td>email: <input type="email" required placeholder="enter your email" ></td>
                     </tr>
                     <tr>
-                        <td>date of birth: <input type="date"></td>
+                        <td>date of birth: <input type="date" required></td>
                     </tr>
                     <tr>
                         <td>
-                            Male<input type="radio" name="gender" >
-                            female<input type="radio" name=gender>
-                            other<input type="radio" name="gender">
+                            Male<input type="radio" name="gender" required>
+                            female<input type="radio" name=gender required>
+                            other<input type="radio" name="gender" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox">Receive updates</td>
+                        <td><input type="checkbox" required>Receive updates</td>
                     </tr>
                     <tr>
                         <td>
@@ -107,6 +107,6 @@
                 </form>
 
             </table>
-            
+            </fieldset>
             </body>
     </html>
