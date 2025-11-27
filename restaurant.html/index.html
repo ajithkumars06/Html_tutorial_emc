@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One Piece — Home</title>
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="La Petite Table — cozy local restaurant serving fresh seasonal dishes." />
+  <style>
+    :root{--accent:#d9a800;--bg:#fffaf6;--muted:#666;--card:#ffffff;--maxw:1100px}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{background:linear-gradient(90deg,rgba(0,0,0,0.55),rgba(0,0,0,0.15));color:#fff}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
+    .brand .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:flex;align-items:center;justify-content:center;color:#111}
+    nav ul{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+    nav a{color:inherit;text-decoration:none;padding:6px 10px;border-radius:6px}
+    nav a:hover{background:rgba(255,255,255,0.08)}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:48px 24px}
+    .hero-inner{display:flex;flex-direction:column;gap:18px}
+    .eyebrow{color:var(--accent);font-weight:700}
+    h1{margin:0;font-size:clamp(28px,4vw,44px);line-height:1.03}
+    p.lead{margin:0;color:var(--muted);max-width:56ch}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#111;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.alt{background:transparent;border:2px solid rgba(0,0,0,0.06);color:#fff}
+
+    /* Decorative hero image box using inline SVG background */
+    .hero-media{border-radius:14px;overflow:hidden;min-height:260px;display:flex;align-items:center;justify-content:center}
+    .hero-media svg{width:100%;height:100%;display:block}
+
+    /* Sections */
+    .section{padding:42px 24px}
+    .grid{display:grid;gap:18px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));display:grid}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(17,17,17,0.06)}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted)}
+
+    /* Menu table preview */
+    table{width:100%;border-collapse:collapse;background:transparent}
+    td,th{padding:10px 12px;text-align:left}
+    tr + tr td{border-top:1px dashed rgba(0,0,0,0.06)}
+    th.price{text-align:right}
+
+    footer{padding:28px 24px;text-align:center;color:var(--muted)}
+
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 460px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden>🍽️</div>
+        <div>
+          <div style="font-size:18px">One Piece</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.85);margin-top:2px">Seasonal • Local • Fresh</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div class="hero-inner container">
+        <div class="eyebrow">Now serving — Autumn Specials</div>
+        <h1>Cozy flavours, local ingredients — welcome to One Piece</h1>
+        <p class="lead">A neighborhood restaurant blending classic techniques with seasonal produce. Drop in for a slow lunch, intimate dinner, or book a table for a special occasion.</p>
+        <div class="hero-cta">
+          <a class="btn" href="menu.html">See the Menu</a>
+          <a class="btn" href="contact.html">Book a Table</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <!-- Inline SVG placeholder image — replace with a real photo (hero-restaurant.jpg) if available -->
+        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hero image of plated dishes">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#ffd27a"/>
+              <stop offset="1" stop-color="#ff7b5c"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="700" fill="#f7e9de"/>
+          <g transform="translate(60,40)">
+            <rect x="0" y="0" width="1080" height="620" rx="22" fill="url(#g)"/>
+            <g transform="translate(30,40)">
+              <rect x="0" y="0" width="420" height="240" rx="14" fill="#ffffff" opacity="0.95"/>
+              <rect x="460" y="0" width="580" height="240" rx="14" fill="#ffffff" opacity="0.95"/>
+              <circle cx="250" cy="420" r="112" fill="#fff" opacity="0.95"/>
+            </g>
+            <text x="70" y="170" font-size="36" font-family="sans-serif" fill="#3a2a1f">Seasonal Menu</text>
+            <text x="70" y="210" font-size="18" font-family="sans-serif" fill="#3a2a1f" opacity="0.9">Fresh • Local • Handcrafted</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h2>About</h2>
+      <p class="muted">One Piece as a small baratie with a simple mission: serve honest food made from fresh local produce. Our kitchen changes its menu every season to highlight the best flavours of the region.</p>
+    </section>
+
+    <section class="section container">
+      <h2>Chef's Specialties</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pan-Seared Salmon</h3>
+          <p class="muted">Citrus butter, roasted seasonal vegetables — a house favourite.</p>
+        </article>
+        <article class="card">
+          <h3>Wood-Fired Pizza</h3>
+          <p class="muted">Hand-stretched crust, heirloom tomato, fresh basil.</p>
+        </article>
+        <article class="card">
+          <h3>Heritage Salad</h3>
+          <p class="muted">Mixed greens, pickled onion, toasted seeds, lemon vinaigrette.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Reserve a Table</h2>
+      <p class="muted">Prefer to call? <strong>+91 98765 43210</strong> — or use our contact page to send a reservation request.</p>
+      <p><a class="btn" href="contact.html">Contact & Reservations</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <strong>One Piece</strong> — 2025 • Baratie, City</p>
+      <p class="muted">Follow us on <a href="https://www.instagram.com/ajithxkumar/">Instagram</a> • <a href="https://www.facebook.com/share/17SwMDspcz/">Facebook</a></p>
+    </div>
+  </footer>
+</body>
+</html>
